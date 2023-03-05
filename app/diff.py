@@ -1,17 +1,17 @@
 import os
 from dataclasses import dataclass
-from typing import Set
+from typing import Set, Optional
 
-from app import AnkiCards, AnkiCard
+from app import AnkiCards
 
 
 @dataclass
 class Diff:
-    diff_file: str
+    diff_file: Optional[str]
     ids: Set[str]
 
     @staticmethod
-    def from_file(diff_file: str):
+    def from_file(diff_file: Optional[str]):
         ids = Diff._get_already_processed_ids(diff_file)
         return Diff(diff_file=diff_file, ids=ids)
 
@@ -19,8 +19,8 @@ class Diff:
         return id not in self.ids
 
     @staticmethod
-    def _get_already_processed_ids(diff_file: str) -> Set[str]:
-        if os.path.exists(diff_file):
+    def _get_already_processed_ids(diff_file: Optional[str]) -> Set[str]:
+        if diff_file and os.path.exists(diff_file):
             with open(diff_file, 'r') as f:
                 return set([line.strip() for line in f.readlines()])
         else:
