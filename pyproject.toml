@@ -11,6 +11,9 @@ packages = [{ include = "app" }]
 python = "^3.9"
 requests = "2.28.2"
 deepl = "1.14.0"
+attrs = "22.2.0"
+dataclasses-json = "0.5.7"
+alive-progress = "3.0.1"
 
 [tool.poetry.scripts]
 app = "app:main"
