@@ -127,3 +127,28 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.DS_Store
+.classpath
+.project
+.settings
+.springBeans
+target
+
+# Binary files like jpg, png, gif, swf should be stored on the gsp.
+.swf
+.jpg
+.jpeg
+.png
+.gif
+
+# idea
+.idea
+*.iml
+*.ipr
+*.iws
+
+# otherui
+
+/bin
+tmp.*
