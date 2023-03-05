@@ -1,0 +1,15 @@
+name: Test PR
+
+on: pull_request
+
+jobs:
+  test-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - uses: snok/install-poetry@v1
+      - uses: actions/checkout@v3
+      - run: poetry install --no-interaction --no-root
+      - run: poetry run test
