@@ -2,7 +2,6 @@ from alive_progress import alive_bar
 
 from app.ankicards import AnkiCards, AnkiCard
 from app.dictionaryapi_webclient import DictionaryApi
-from app.diff import Diff
 from app.translator import Translator
 from app.utils import Utils
 from app.vocab import Vocab
@@ -13,11 +12,11 @@ def main():
     vocab_db = Vocab(arguments.input)
     words_with_usage = vocab_db.read_all()
     cards = AnkiCards()
-    deepl_translator = Translator(arguments.deepl_api_key)
-    cards_diff = Diff.from_file(arguments.diff)
+    deepl_translator = Translator.create(arguments.deepl_api_key)
+    ids = AnkiCards.read_ids(output_file=arguments.output)
     with alive_bar(len(words_with_usage)) as bar:
         for word_with_usage in words_with_usage:
-            if cards_diff.is_absent(word_with_usage.id):
+            if word_with_usage.id not in ids:
                 definition = DictionaryApi.get(word_with_usage.word)
                 translation = deepl_translator.translate(word_with_usage.word, word_with_usage.usage)
                 card = AnkiCard(
@@ -32,4 +31,3 @@ def main():
                 cards.add(card)
             bar()
     cards.save_as_csv(arguments.output)
-    cards_diff.update_file_with_new_cards(cards)
