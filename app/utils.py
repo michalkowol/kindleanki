@@ -9,7 +9,6 @@ class Utils:
         parser.add_argument('--deepl-api-key', type=str, required=True, help='DeepL API Key')
         parser.add_argument('--input', type=str, required=True, help='input file (mostly vocab.db)')
         parser.add_argument('--output', type=str, required=True, help='output file (mostly vocab.csv)')
-        parser.add_argument('--diff', type=str, required=False, help='diff file (mostly diff.txt)')
         return parser.parse_args()
 
     @staticmethod
