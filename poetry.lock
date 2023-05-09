@@ -14,14 +14,14 @@ files = [
 
 [[package]]
 name = "alive-progress"
-version = "3.1.1"
+version = "3.1.2"
 description = "A new kind of Progress Bar, with real-time throughput, ETA, and very cool animations!"
 category = "main"
 optional = false
 python-versions = ">=3.7, <4"
 files = [
-    {file = "alive-progress-3.1.1.tar.gz", hash = "sha256:6d9ad57add9c1341aa57d93e6370c76c9fc0c9fdc631e1c56b48e59daa32106e"},
-    {file = "alive_progress-3.1.1-py3-none-any.whl", hash = "sha256:5c1e075ff56230bda6bf4104c471c4ea8eaeb24af9e5e1696dcbcfc5b503255a"},
+    {file = "alive-progress-3.1.2.tar.gz", hash = "sha256:b22ba960151f582cdd6d489c56462d2f9adca821608075d0d8d2cd15d1b6845b"},
+    {file = "alive_progress-3.1.2-py3-none-any.whl", hash = "sha256:d2b89b60fee2f112668117a9f361ceea44a685a37cafd009f396b87b9816efa3"},
 ]
 
 [package.dependencies]
@@ -351,4 +351,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "0e313650d846964ce66e696e89adcd2f6add125fdb74f9773af7ef37c190c96b"
+content-hash = "f54b6db7a1156289b46070ad410132e7b7b04bd4be8fb1c130a12488c79393df"
