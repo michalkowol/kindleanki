@@ -169,13 +169,13 @@ typing-inspect = ">=0.4.0,<1"
 
 [[package]]
 name = "deepl"
-version = "1.15.0"
+version = "1.16.0"
 description = "Python library for the DeepL API."
 optional = false
 python-versions = ">=3.6.2,<4"
 files = [
-    {file = "deepl-1.15.0-py3-none-any.whl", hash = "sha256:c8cddd1acd6808ab803d70d5f50fbffd1983d12d7d6b85d0c8b78f5cab1cbc5f"},
-    {file = "deepl-1.15.0.tar.gz", hash = "sha256:051142e11e5dd60c47c84248e35162d00cfc1aa9831bb990e85c7fa36dce19c1"},
+    {file = "deepl-1.16.0-py3-none-any.whl", hash = "sha256:2ac279bb249a5f486702a125b51ebe71b57d9603b9afc61afe1b22ccdf0af756"},
+    {file = "deepl-1.16.0.tar.gz", hash = "sha256:009f5b7ae95d00e9fdc80a3c3550e49e95a44c6d4f2802c0d588d48c2d199b7c"},
 ]
 
 [package.dependencies]
@@ -316,4 +316,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "c1f5dd7ab860ff40e0b9bf0b176d2a38777eba3fac421e99786c8dcf4151b30f"
+content-hash = "267a210b0a2927982bf93991c217dce8136dd635baf83915e40a308c4ec51123"
