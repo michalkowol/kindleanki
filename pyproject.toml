@@ -11,7 +11,7 @@ packages = [{ include = "app" }]
 python = "^3.9"
 requests = "2.31.0"
 deepl = "1.16.1"
-attrs = "23.1.0"
+attrs = "23.2.0"
 dataclasses-json = "0.6.3"
 alive-progress = "3.1.5"
 
