@@ -12,7 +12,7 @@ python = "^3.9"
 requests = "2.31.0"
 deepl = "1.18.0"
 attrs = "23.2.0"
-dataclasses-json = "0.6.5"
+dataclasses-json = "0.6.6"
 alive-progress = "3.1.5"
 
 [tool.poetry.scripts]
