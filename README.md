@@ -15,5 +15,5 @@ poetry install
 ## Usage
 
 ```bash
-poetry run app --deepl-api-key YOUR_DEEPL_API_KEY --input vocab.db --output vocab.csv
+poetry run app --deepl-api-key YOUR_DEEPL_API_KEY --input /Volumes/Kindle/system/vocabulary/vocab.db --output /Users/michal/Dropbox/referencje/kindle/vocab.csv
 ```
