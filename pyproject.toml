@@ -13,7 +13,7 @@ requests = "2.32.3"
 deepl = "1.19.1"
 attrs = "24.2.0"
 dataclasses-json = "0.6.7"
-alive-progress = "3.1.5"
+alive-progress = "3.2.0"
 
 [tool.poetry.scripts]
 app = "app:main"
