@@ -10,6 +10,6 @@ jobs:
         with:
           python-version: '3.12'
       - uses: snok/install-poetry@v1
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: poetry install --no-interaction --no-root
       - run: poetry run test
