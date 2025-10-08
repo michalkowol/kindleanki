@@ -170,21 +170,21 @@ typing-inspect = ">=0.4.0,<1"
 
 [[package]]
 name = "deepl"
-version = "1.22.0"
+version = "1.23.0"
 description = "Python library for the DeepL API."
 optional = false
-python-versions = "<4,>=3.6.2"
+python-versions = "<4,>=3.9"
 groups = ["main"]
 files = [
-    {file = "deepl-1.22.0-py3-none-any.whl", hash = "sha256:df1ed8f4cd4cc6bb9078f3aa0a0b045cd9e3b813a6d3bce4d33b51aa836fddf1"},
-    {file = "deepl-1.22.0.tar.gz", hash = "sha256:eb09568e5996dff6a2c318d40a22bd67d3fcf04f2ec2b1af985b8d4b6cf096b6"},
+    {file = "deepl-1.23.0-py3-none-any.whl", hash = "sha256:4e7b2fd856eced4bade95e6710580e2d4e89cf0f166adde4362c40eba9068eb7"},
+    {file = "deepl-1.23.0.tar.gz", hash = "sha256:4f54df534d7823dd68b0beac74fcaf6035a22632e4ac949e6acaf24fdae20ee3"},
 ]
 
 [package.dependencies]
-requests = ">=2,<3"
+requests = ">=2.32.4"
 
 [package.extras]
-keyring = ["keyring (>=23.4.1,<24.0.0) ; python_version >= \"3.6\" and python_version < \"4\""]
+keyring = ["keyring (>=23.4.1,<24.0.0)"]
 
 [[package]]
 name = "graphemeu"
@@ -329,4 +329,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "4d06506b3717a6aceaefbe34db4c1384e9981e22b82ca3ab233cecfa8fb25e86"
+content-hash = "30a56f518e657a78da6d5bb2d6a39a936d3258d38ce547cead51ba7491ec4e1b"
