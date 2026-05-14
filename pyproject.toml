@@ -9,7 +9,7 @@ packages = [{ include = "app" }]
 
 [tool.poetry.dependencies]
 python = "^3.12"
-requests = "2.34.0"
+requests = "2.34.1"
 deepl = "1.30.0"
 attrs = "26.1.0"
 dataclasses-json = "0.6.7"
