@@ -170,14 +170,14 @@ typing-inspect = ">=0.4.0,<1"
 
 [[package]]
 name = "deepl"
-version = "1.33.0"
+version = "2.0.0"
 description = "Python library for the DeepL API."
 optional = false
 python-versions = "<4,>=3.9"
 groups = ["main"]
 files = [
-    {file = "deepl-1.33.0-py3-none-any.whl", hash = "sha256:68f59500c65998e3b6a250060820f3e3552b739314dde996375272f7aa27bf66"},
-    {file = "deepl-1.33.0.tar.gz", hash = "sha256:ddec330fc7b617406131fed81137fd3bb43d1bae03ecbd48c8b8e9cb5851e303"},
+    {file = "deepl-2.0.0-py3-none-any.whl", hash = "sha256:fcb347c0a71bde230090f0fbb72e7d8ec7c220894e4839a29e579334f1558a47"},
+    {file = "deepl-2.0.0.tar.gz", hash = "sha256:4afccd198328996afd13808c1d83914abeb690230dec3156f8d68bb06e4f3fee"},
 ]
 
 [package.dependencies]
@@ -329,4 +329,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "54ab83e0d612bad1399523349cc6df78ae3d725320d65bc6a30ecfac33b770d4"
+content-hash = "fab4bb94ac992abb1981ef85684274ac685c263d4c4e3d711787ac139492e7c7"
